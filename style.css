@@ -1,0 +1,20 @@
+
+body {
+	background-color: rgb(230, 248, 255);
+	color: rgb(127, 199, 28);
+}
+p {
+	color: inherit;
+	text-align: center;
+}
+#title1 {
+	color: inherit;
+	text-align: center;
+}
+ol {
+	text-align: center;
+}
+
+a {
+	color: rgb(9, 100, 156);
+}
