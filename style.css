@@ -6,15 +6,19 @@ body {
 p {
 	color: inherit;
 	text-align: center;
+	font-size: 25;
 }
 #title1 {
 	color: inherit;
 	text-align: center;
+	font-size: 50
 }
 ol {
 	text-align: center;
+	font-size: 25;
 }
 
 a {
 	color: rgb(9, 100, 156);
+	font-size: 25;
 }
