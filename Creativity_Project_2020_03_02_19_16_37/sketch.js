@@ -1,5 +1,6 @@
 let specs = 0;
 let maxSpecs = 500;
+let drawing = true;
 
 function setup() {
   createCanvas(400, 400);
@@ -8,8 +9,9 @@ function setup() {
 }
 
 function draw() {
-  drawSpec();
-  specs++
+  if (drawing == true) {
+    drawSpec();
+  }
 }
 
 function drawSpec() {
@@ -20,13 +22,25 @@ function drawSpec() {
     textFont(random(fonts));
     textSize(random(70));
     textStyle(random(styles));
-    let specs = text("Specs", random(-100,400), random(400));
+    let specs = text("Specs", random(-100, 400), random(400));
   } else {
     fill(0);
     textFont('Courier New')
     textSize(140)
     textStyle(BOLD)
     text("Specs", -10, 225);
-    
+    drawing = false;
+    r = createButton('reset');
+    r.position((width / 2) - 50, 2 * (height / 3));
+    r.size(80,30);
+    r.mousePressed(reset);
   }
+  specs++
+}
+
+function reset() {
+  background(255);
+  specs = 0;
+  drawing = true;
+  r.position(-100,-100);
 }
