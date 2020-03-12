@@ -1,7 +1,7 @@
 
 body {
 	background-color: rgb(230, 248, 255);
-	color: rgb(127, 199, 28);
+	color: rgb(127, 200, 28);
 }
 p {
 	color: inherit;
@@ -9,9 +9,9 @@ p {
 	font-size: 25;
 }
 #title1 {
-	color: inherit;
 	text-align: center;
 	font-size: 50
+	color: inherit;
 }
 ol {
 	text-align: center;
@@ -19,6 +19,6 @@ ol {
 }
 
 a {
-	color: rgb(9, 100, 156);
+	color: rgb(9, 100, 197);
 	font-size: 25;
 }
